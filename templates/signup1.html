@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>signup form</title>
+</head>
+<body>
+<br/>	
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_table}}
+    <br/><input type="submit" value="Submit" />
+</form>
+</body>
+</html>
